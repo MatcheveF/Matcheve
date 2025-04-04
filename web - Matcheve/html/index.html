@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Bilheteria</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sistema de Bilheteria</h1>
+            <button id="dark-mode-toggle">🌙</button>
+        </header>
+        <main>
+            <div class="ticket">
+                <h2>Evento: Show de Rock</h2>
+                <p>Data: 10 de Abril de 2025</p>
+                <p>Local: Arena Central</p>
+                <!--<button class="buy-btn">Comprar Ingresso</button>-->
+                <a href="Pagina2.html">Comprar Ingresso</a>
+            </div>
+        </main>
+    </div>
+    
+    <script>
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        const body = document.body;
+
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            darkModeToggle.textContent = body.classList.contains('dark-mode') ? '☀️' : '🌙';
+        });
+    </script>
+    
+    
+</body>
+</html>

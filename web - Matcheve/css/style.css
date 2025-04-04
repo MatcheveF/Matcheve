@@ -1,0 +1,49 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            transition: 0.5s, color 0.5s;
+        }
+        .container {
+            padding: 20px;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            border-radius: 8px;
+        }
+        .ticket {
+            margin-top: 20px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .ticket:hover {
+            transform: scale(1.05);
+        }
+        .buy-btn {
+            padding: 10px 20px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .buy-btn:hover {
+            background: #218838;
+        }
+        .dark-mode {
+            background: #121212;
+            color: white;
+        }
+        .dark-mode .ticket {
+            background: #333;
+        }
+       

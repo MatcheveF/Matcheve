@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Bilheteria</title>
+    <link rel="stylesheet" href="/css/style2.css">
+</head>
+<body>
+   
+    <div class="container">
+        <header>
+            <h1>Sistema de Bilheteria</h1>
+            <button id="dark-mode-toggle">🌙</button>
+        </header>
+        <a href="index.html">Voltar</a>
+        <main>
+            <div class="ticket">
+                <h2>Evento: Show de Rock</h2>
+                <p>Data: 10 de Abril de 2025</p>
+                <p>Local: Arena Central</p>
+                <button class="buy-btn">Comprar Ingresso</button>
+            </div>
+            
+            <div class="purchase-form">
+                <h2>Compra de Bilhetes</h2>
+                <form>
+                    <label for="name">Nome Completo:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="quantity">Quantidade de Bilhetes:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" required>
+                    
+                    <button type="submit" class="submit-btn">Finalizar Compra</button>
+                </form>
+            </div>
+        </main>
+    </div>
+    
+    <script>
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        const body = document.body;
+
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            darkModeToggle.textContent = body.classList.contains('dark-mode') ? '☀️' : '🌙';
+        });
+    </script>
+    
+
+    
+</body>
+</html>
